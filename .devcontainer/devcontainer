@@ -1,0 +1,15 @@
+{
+	"name": "my-slidev-presentations",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"shd101wyy.markdown-preview-enhanced",
+				"GitHub.vscode-pull-request-github",
+				"streetsidesoftware.code-spell-checker",
+				"antfu.slidev"
+			]
+		}
+	}
+}
