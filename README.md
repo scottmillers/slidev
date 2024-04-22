@@ -4,26 +4,17 @@
 Setup
 1. Install locally in the container
 
-This will prompt for a directory name and install the dependencies
-
 ```
 npm init slidev@latest
-Need to install the following packages:
-create-slidev@0.49.0-beta.4
-Ok to proceed? (y) y
-
-  ●■▲
-  Slidev Creator  v0.49.0-beta.4
-
-✔ Project name: … healthomics
-  Scaffolding project in healthomics ...
-  Done.
-
-✔ Install and start it now? … yes
-✔ Choose the package manager › npm
 ```
 Follow the prompts to start making your slides.
 
+If you install globally you can use the `slidev` command line 
+
+Install Globall using
+```
+npm i -g @slidev/cli
+```
 
 2. Start Slidev
 ```
@@ -32,6 +23,18 @@ npm run dev
 ```
 
 
+## Build the Single Page Application 
+
+1. Build the Single Page Application
+
+```
+npm run build
+```
+
+
+
+
+Will create a /dist directory
 ## Install on my GitHub Pages
 
 How to put install as a set of web pages
@@ -88,14 +91,6 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-## Build the Single Page Application 
-
-1. Build the Single Page Application
-```
-npm run build
-```
-
-Will create a /dist directory
 
 
 ## Export to PDF
@@ -115,7 +110,16 @@ npm run expert
 ```
 The files will be 
 
-# References
+
+## Install Problems (April 22, 2024)
+
+Slidedev gets stuck on the install.  I tried the latest and then tried a earlier version.  Both get stuck here:
+```
+(#########⠂⠂⠂⠂⠂⠂⠂⠂⠂) ⠼ idealTree: timing idealTree Completed in 185603ms
+```
+I also tried chaning my Dev Container to be Ubuntu.  That also got stuck on the install. 
+
+## References
 
 https://sli.dev/guide/
 
