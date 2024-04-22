@@ -27,14 +27,18 @@ npm run dev
 
 1. Build the Single Page Application
 
+To deploy your slides under the /slidev subfolder use this command.
+
 ```
-npm run build
+slidev  build --base /slidev/
 ```
 
+Then copy the /dist folder to the /docs folder.
 
 
 
-Will create a /dist directory
+
+
 ## Install on my GitHub Pages
 
 How to put install as a set of web pages

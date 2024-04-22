@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: tiers-network-poc
+        working-directory: healthomics
     permissions:
       contents: read
       pages: write

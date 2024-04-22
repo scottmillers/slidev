@@ -24,7 +24,7 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to Slidev
+# Welcome to My Slidev
 
 Presentation slides for developers
 
