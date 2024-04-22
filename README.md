@@ -52,7 +52,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: tiers-network-poc
     permissions:
       contents: read
       pages: write
