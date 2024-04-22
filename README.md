@@ -27,19 +27,14 @@ npm run dev
 
 1. Build the Single Page Application
 
-To deploy your slides under the /slidev subfolder use this command.
+To deploy your slides under the /slidev subfolder on the website use this command.
 
 ```
-slidev  build --base /slidev/
+slidev  build --base /slidev/ --out ../docs/  --emptyOutDir
 ```
 
-Then copy the /dist folder to the /docs folder.
 
-
-
-
-
-## Install on my GitHub Pages
+## Install the built Slides On my GitHub Pages
 
 How to put install as a set of web pages
 
@@ -61,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: tiers-network-poc
+        working-directory: docs
     permissions:
       contents: read
       pages: write
@@ -88,7 +83,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs
 
       - name: Deploy
         id: deployment

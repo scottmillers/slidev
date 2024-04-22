@@ -37,6 +37,7 @@ jobs:
       - uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
+        working-directory: healthomics
         with:
           path: dist
 
