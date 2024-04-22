@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: healthomics
+        working-directory: docs
     permissions:
       contents: read
       pages: write
@@ -37,9 +37,8 @@ jobs:
       - uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
-        working-directory: healthomics
         with:
-          path: dist
+          path: docs
 
       - name: Deploy
         id: deployment
