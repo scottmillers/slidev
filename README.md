@@ -1,40 +1,45 @@
-# How to use Slidev
+# My Slidev Setup
 
 
-Setup
-1. Install locally in the container
+## Prerequisites
 
-```
-npm init slidev@latest
-```
-Follow the prompts to start making your slides.
+Slidev requires Node.js >= 18.0
 
-If you install globally you can use the `slidev` command line 
+However, I wasn't able to get it to work with Node.js 20, or the latest.  So I had to install Node.js 18.  
 
-Install Globall using
-```
-npm i -g @slidev/cli
-```
+## Install
 
-2. Start Slidev
-```
-cd healthomics
-npm run dev
-```
+
+1.  To install globally so you can use the `slidev` command line
+    ```
+    npm i -g @slidev/cli
+    ```
+
+
+2. Create some slides
+    ```
+    mkdir healthomics
+    slidev
+    ```
 
 
 ## Build the Single Page Application 
 
 1. Build the Single Page Application
 
-To deploy your slides under the /slidev subfolder on the website use this command.
+  The command below will create a Single Page application that can be deployed to a /slidev subfolder on a website. 
 
-```
-slidev  build --base /slidev/ --out ../docs/  --emptyOutDir
-```
+  ```
+  cd healthomics
+  slidev  build --base /slidev/ --out ../docs/  
+  ```
 
 
-## Install the built Slides On my GitHub Pages
+
+## Install the Single Page Application on GitHub Pages
+
+1. Go to GitHub
+
 
 How to put install as a set of web pages
 
